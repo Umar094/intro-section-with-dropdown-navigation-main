@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+</head>
+<body>
+
+  <header class="header">
+    <img class="header__logo" src="./images/logo.svg" alt="logo">
+
+    <nav class="header__nav">
+      <li class="features-dropdown" data-dropdown>
+        Features
+        <img class="arrow-down" src="./images/icon-arrow-down.svg">
+
+        <ul class="features-dropdown__content">
+          <li>
+              <img class="features-dropdown__icon" src="./images/icon-todo.svg">
+              <a href="#">Todo list</a>
+          </li>
+          <li>
+              <img class="features-dropdown__icon" src="./images/icon-calendar.svg">
+              <a href="#">Calendar</a>
+          </li>
+          <li>
+              <img class="features-dropdown__icon" src="./images/icon-reminders.svg">
+              <a href="#">Reminder</a>
+          </li>
+          <li>
+              <img  class="features-dropdown__icon"   src="./images/icon-planning.svg">
+              <a href="#">Planning</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="company-dropdown" data-dropdown>
+        Company
+        <img  class="arrow-down" src="./images/icon-arrow-down.svg">
+
+        <ul class="company-dropdown__content">
+          <li><a href="#">History</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </li>
+      <li class="header__nav-item">
+        <a href="#">Careers</a>
+      </li>
+      <li class="header__nav-item">
+        <a href="#">About</a>
+      </li>
+    </nav>
+
+    <div class="header__authorization">
+      <a class="header__login" href="#">Login</a>
+      <a class="header__register" href="#">Register</a>
+    </div>
+
+    <img class="header__burger-menu-icon" src="./images/icon-menu.svg" alt="menu" data-mobile-menu-icon>
+
+    <!-- mobile menu -->
+
+    <div class="header__burger-menu" data-burger-menu>
+      <div class="header__close-icon-box">
+        <img src="./images/icon-close-menu.svg" alt="close" data-mobile-menu-icon>
+      </div>
+
+      <nav class="header__mobile-nav">
+        <ul>
+          <li class="header__mobile-ul-item" data-mobile-dropdown>
+            Features
+            <img class="arrow-down" src="./images/icon-arrow-down.svg">
+            <ul class="mobile-dropdown">
+              <li class="mobile-dropdown__item">
+                  <img class="features-dropdown__icon" src="./images/icon-todo.svg">
+                  <a href="#">Todo list</a>
+              </li>
+              <li class="mobile-dropdown__item">
+                  <img class="features-dropdown__icon" src="./images/icon-calendar.svg">
+                  <a href="#">Calendar</a>
+              </li>
+              <li class="mobile-dropdown__item">
+                  <img class="features-dropdown__icon" src="./images/icon-reminders.svg">
+                  <a href="#">Reminder</a>
+              </li>
+              <li class="mobile-dropdown__item">
+                  <img  class="features-dropdown__icon" src="./images/icon-planning.svg">
+                  <a href="#">Planning</a>
+              </li>
+            </ul>
+
+          </li>
+          <li class="header__mobile-ul-item" data-mobile-dropdown>
+            Company
+            <img class="arrow-down" src="./images/icon-arrow-down.svg">
+
+            <ul class="mobile-dropdown">
+              <li class="mobile-dropdown__item"><a href="#">History</a></li>
+              <li class="mobile-dropdown__item"><a href="#">Our Team</a></li>
+              <li class="mobile-dropdown__item"><a href="#">Blog</a></li>
+            </ul>
+          </li>
+          <li class="header__mobile-ul-item"><a href="#">Careers</a></li>
+          <li class="header__mobile-ul-item"><a href="#">About</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__mobile-authorization">
+        <a class="header__mobile-login" href="#">Login</a>
+        <a class="header__mobile-register" href="#">Register</a>
+      </div>
+    </div>
+
+  </header>
+  <script src="main.js"></script>
+</body>
+</html>
